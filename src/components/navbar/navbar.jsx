@@ -1,9 +1,10 @@
 import {useState} from 'react';
 import './navbar.css'
+import iconMenu from '../../assets/icons/menu-icon.svg'
+import Logo from '../logo/logo';
 
 function Navbar() {
   const [selectedItem, setSelectedItem] = useState('HOME');
-
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
@@ -57,6 +58,12 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      <div className='menu-mobile' >
+        <div className="logo-mobile">
+          GR
+        </div>
+        <button><img className='icon-mobile' src={iconMenu} alt='' ></img></button>
+      </div>
     </nav>
   )
 }

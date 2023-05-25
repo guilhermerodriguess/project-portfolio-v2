@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@400;500&family=Zen+Dots&display=swap');
+
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -34,3 +36,37 @@
   filter: blur(0px)
 }
 
+.menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px
+  }
+
+  .menu-mobile button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .menu-mobile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-mobile {
+    font-family: 'Zen Dots', cursive;
+    font-size: 40px;
+    letter-spacing: -0.295em;
+    color: var(--primary-color);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.67);
+  }
+}

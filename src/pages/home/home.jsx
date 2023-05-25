@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css'
 import Icons from '../../components/icons/icons';
-import image from './image.png'
+import image from './../../assets/imgs/image.png'
 
 function Home() {
   return (
@@ -28,8 +28,24 @@ function Home() {
             <Icons />
           </div>
         </div>
+        <div className='im-guilherme-mobile'>
+          <small className='im'>I'm</small>
+          <p className='guilherme'>GUILHERME</p>
+        </div>
+        <div className='web-developer-mobile'>
+            <p>Web Developer Full Stack</p>
+          </div>
         <div className='image-container'>
           <img src={ image } alt="Foto de Guilherme" />
+        </div>
+        <div className='phrase-mobile'>
+          <p >
+            "Turning ideas into reality, one pixel at a time,
+             through the power of creativity and technology."
+          </p>
+        </div>
+        <div className='icons-mobile'>
+          <Icons />
         </div>
       </section>
     </main>

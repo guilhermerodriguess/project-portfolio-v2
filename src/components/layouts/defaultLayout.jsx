@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../navbar/navbar';
-import Footer from '../footer/footer';
+import Logo from '../logo/logo';
 import './defaultLayout.css'
 
 
@@ -9,7 +9,7 @@ function DefaultLayout({ children }) {
     <div className='default-layout'>
       <Navbar />
       {children}
-      <Footer />
+      <Logo />
     </div>
   );
 }
