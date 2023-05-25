@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <DefaultLayout >
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/portfolio" element={<Home />} />
           </Routes>
         </DefaultLayout>
       </div>
