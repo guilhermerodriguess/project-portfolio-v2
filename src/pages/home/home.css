@@ -30,7 +30,7 @@ main {
   color: var(--text-light);
   display: flex;
   flex-direction: column;
-  max-width: 58vh;
+  width: 500px;
 }
 
 .im-guilherme {
