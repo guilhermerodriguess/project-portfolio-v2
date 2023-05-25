@@ -28,3 +28,8 @@
 .nav-links li .inactive {
   filter: blur(2px)
 }
+
+.nav-links li .inactive:hover {
+  filter: blur(0px)
+}
+

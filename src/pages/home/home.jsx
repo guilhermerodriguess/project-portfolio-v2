@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css'
 import Icons from '../../components/icons/icons';
+import image from './image.png'
 
 function Home() {
   return (
@@ -28,7 +29,7 @@ function Home() {
           </div>
         </div>
         <div className='image-container'>
-          <img src="image.png" alt="cade a imagem" />
+          <img src={ image } alt="Foto de Guilherme" />
         </div>
       </section>
     </main>
