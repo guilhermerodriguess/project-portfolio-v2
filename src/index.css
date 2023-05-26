@@ -9,7 +9,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Mohave', sans-serif;
   background: linear-gradient(180deg, #2C353B 0%, #51613C 100%);
 }
 
@@ -17,6 +16,11 @@ html, body {
   height: 100vh;
   max-height: 100vh;
   overflow-y: auto;
+  font-family: 'Mohave', sans-serif;
+}
+
+button {
+  font-family: 'Mohave', sans-serif;
 }
 
 code {

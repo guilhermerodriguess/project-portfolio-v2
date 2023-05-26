@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import DefaultLayout from './components/layouts/defaultLayout'; 
+import DefaultLayout from './components/layouts/defaultLayout';
 import Home from './pages/home/home';
-import './App.css'
+import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <DefaultLayout >
+        <DefaultLayout>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={ <Home /> } />
           </Routes>
         </DefaultLayout>
       </div>
