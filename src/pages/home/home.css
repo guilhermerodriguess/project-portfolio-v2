@@ -71,8 +71,10 @@ main {
 
 .icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 20px;
+  align-items: center;
 }
 
 .image-container img {
@@ -113,8 +115,7 @@ main {
 
   .home-container {
     flex-direction: column;
-    height: 100%;
-    margin: 0 30px;
+    height: 100vh;
   }
 
   .im-guilherme-mobile {

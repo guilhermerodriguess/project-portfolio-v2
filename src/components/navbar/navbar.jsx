@@ -1,18 +1,24 @@
-import {useState} from 'react';
-import './navbar.css'
-import iconMenu from '../../assets/icons/menu-icon.svg'
-import Logo from '../logo/logo';
+import { useState } from 'react';
+import './navbar.css';
+import iconMenu from '../../assets/icons/menu-icon.svg';
 
 function Navbar() {
   const [selectedItem, setSelectedItem] = useState('HOME');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
+    setIsMobileMenuOpen(false);
   };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav>
-      <ul className="nav-links">
-        <li>          
+      <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : 'mobile-close'}`}>
+        <li>
           <a
             href="#"
             className={selectedItem === 'CONTACT' ? 'active' : 'inactive'}
@@ -38,7 +44,7 @@ function Navbar() {
           >
             HOME
           </a>
-        </li>        
+        </li>
         <li>
           <a
             href="#"
@@ -47,7 +53,7 @@ function Navbar() {
           >
             PORTFOLIO
           </a>
-        </li>        
+        </li>
         <li>
           <a
             href="#"
@@ -58,14 +64,14 @@ function Navbar() {
           </a>
         </li>
       </ul>
-      <div className='menu-mobile' >
-        <div className="logo-mobile">
-          GR
-        </div>
-        <button><img className='icon-mobile' src={iconMenu} alt='' ></img></button>
+      <div className="menu-mobile">
+        <div className="logo-mobile">GR</div>
+        <button onClick={toggleMobileMenu}>
+          <img className="icon-mobile" src={iconMenu} alt="" />
+        </button>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar;
