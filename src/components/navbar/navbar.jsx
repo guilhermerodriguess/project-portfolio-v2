@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import './navbar.css';
+import { useTranslation } from 'react-i18next';
 import iconMenu from '../../assets/icons/menu-icon.svg';
 import iconMenuClose from '../../assets/icons/menu-icon-close.svg';
 
 function Navbar() {
   const [selectedItem, setSelectedItem] = useState('HOME');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
@@ -24,7 +26,7 @@ function Navbar() {
             className={ selectedItem === 'CONTACT' ? 'active' : 'inactive' }
             onClick={ () => handleItemClick('CONTACT') }
           >
-            CONTACT
+            {t('navbar.contact')}
           </button>
         </li>
         <li>
@@ -32,7 +34,7 @@ function Navbar() {
             className={ selectedItem === 'ABOUT' ? 'active' : 'inactive' }
             onClick={ () => handleItemClick('ABOUT') }
           >
-            ABOUT
+            {t('navbar.about')}
           </button>
         </li>
         <li>
@@ -40,7 +42,7 @@ function Navbar() {
             className={ selectedItem === 'HOME' ? 'active' : 'inactive' }
             onClick={ () => handleItemClick('HOME') }
           >
-            HOME
+            {t('navbar.home')}
           </button>
         </li>
         <li>
@@ -48,7 +50,7 @@ function Navbar() {
             className={ selectedItem === 'PORTFOLIO' ? 'active' : 'inactive' }
             onClick={ () => handleItemClick('PORTFOLIO') }
           >
-            PORTFOLIO
+            {t('navbar.portfolio')}
           </button>
         </li>
         <li>
@@ -56,7 +58,7 @@ function Navbar() {
             className={ selectedItem === 'SKILLS' ? 'active' : 'inactive' }
             onClick={ () => handleItemClick('SKILLS') }
           >
-            SKILLS
+            {t('navbar.skills')}
           </button>
         </li>
       </ul>

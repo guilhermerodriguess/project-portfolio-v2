@@ -46,9 +46,18 @@ main {
   padding-right: 28px;
 }
 
+.im.pt {
+  letter-spacing: 0;
+  padding-right: 10px;
+}
+
 .guilherme {
   font-size: 64px;
   letter-spacing: 0.28em;
+  margin: 0;
+}
+
+.phrase p {
   margin: 0;
 }
 
@@ -59,17 +68,18 @@ main {
   margin: 0;
 }
 
+.web-developer.pt p {
+  letter-spacing: 0.15em;
+}
+
 .phrase {
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
-  letter-spacing: 0.215em;
+  letter-spacing: 0.3em;
   line-height: 28px;
 }
 
-.phrase p {
-  margin: 0;
-}
 
 .icons {
   align-items: center;
