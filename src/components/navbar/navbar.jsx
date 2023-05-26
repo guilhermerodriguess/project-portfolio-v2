@@ -8,6 +8,7 @@ function Navbar() {
   const [selectedItem, setSelectedItem] = useState('HOME');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
@@ -16,6 +17,10 @@ function Navbar() {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
@@ -64,6 +69,12 @@ function Navbar() {
       </ul>
       <div className="menu-mobile">
         <div className="logo-mobile">GR</div>
+        <button
+          className={ `language-mobile ${isMobileMenuOpen ? 'off' : ''}` }
+          onClick={ () => changeLanguage(t('language') === 'PT-BR' ? 'pt' : 'en') }
+        >
+          {t('language')}
+        </button>
         <button onClick={ toggleMobileMenu }>
           <img
             className="icon-mobile"
@@ -71,6 +82,7 @@ function Navbar() {
             alt=""
           />
         </button>
+
       </div>
     </nav>
   );

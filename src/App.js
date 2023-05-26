@@ -10,13 +10,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <DefaultLayout>
-          <Suspense fallback={ <div>Loading...</div> }>
+        <Suspense fallback={ <div>Loading...</div> }>
+          <DefaultLayout>
             <Routes>
               <Route exact path="/" element={ <Home /> } />
             </Routes>
-          </Suspense>
-        </DefaultLayout>
+          </DefaultLayout>
+        </Suspense>
       </div>
     </Router>
   );

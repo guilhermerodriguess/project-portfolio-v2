@@ -46,16 +46,20 @@ function Home() {
           </div>
         </div>
         <div className="im-guilherme-mobile">
-          <small className="im">{t('text.im')}</small>
-          <p className="guilherme">GUILHERME</p>
+          <small
+            className={ `im ${language === 'pt' ? 'pt' : ''}` }
+          >
+            {t('text.im')}
+          </small>
+          <p className={ `guilherme ${language === 'pt' ? 'pt' : ''}` }>GUILHERME</p>
         </div>
-        <div className="web-developer-mobile">
+        <div className={ `web-developer-mobile ${language === 'pt' ? 'pt' : ''}` }>
           <p>{t('text.webDeveloper')}</p>
         </div>
         <div className="image-container">
           <img src={ image } alt="Foto de Guilherme" />
         </div>
-        <div className="phrase-mobile">
+        <div className={ `phrase-mobile ${language === 'pt' ? 'pt' : ''}` }>
           <p>
             {t('text.phrase')}
           </p>

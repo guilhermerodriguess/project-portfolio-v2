@@ -128,7 +128,7 @@ main {
   .home-container {
     flex-direction: column;
     height: 100vh;
-    padding: 0 30px;
+    padding: 0 8px;
   }
 
   .im-guilherme-mobile {
@@ -143,8 +143,16 @@ main {
     padding-right: 0;
   }
 
+  .im.pt {
+    padding-right: 0;
+  }
+
   .guilherme {
     font-size: 40px;
+  }
+
+  .guilherme.pt {
+    font-size: 38px;
   }
 
   .web-developer-mobile {
@@ -156,6 +164,11 @@ main {
     font-size: 20px;
     letter-spacing: 0.235em;
     margin: 0;
+  }
+
+  .web-developer-mobile.pt p {
+    font-size: 20px;
+    letter-spacing: 0.14em;
   }
 
   .image-container img {
