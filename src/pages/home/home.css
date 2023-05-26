@@ -144,7 +144,7 @@ main {
   }
 
   .guilherme {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   .web-developer-mobile {
@@ -153,7 +153,7 @@ main {
 
   .web-developer-mobile p {
     color: var(--primary-color);
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0.235em;
     margin: 0;
   }
@@ -167,7 +167,7 @@ main {
   .phrase-mobile {
     display: flex;
     flex-wrap: wrap;
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 0.07em;
     text-align: center;
   }

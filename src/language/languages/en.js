@@ -12,7 +12,7 @@ const messages = {
       text: {
         im: 'I\'m',
         webDeveloper: 'Web Developer Full Stack',
-        phrase: '"Turning ideas into reality, one pixel at a time, through the power of creativity and technology"',
+        phrase: '"Turning ideas into reality, one pixel at a time, through the power of creativity and technology."',
       },
       language: 'PT-BR',
     },

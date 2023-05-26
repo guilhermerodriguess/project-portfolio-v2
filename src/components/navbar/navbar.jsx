@@ -6,7 +6,7 @@ import iconMenuClose from '../../assets/icons/menu-icon-close.svg';
 
 function Navbar() {
   const [selectedItem, setSelectedItem] = useState('HOME');
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
   const { t } = useTranslation();
 
   const handleItemClick = (item) => {
