@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-Note: This project is still under development.
+Note: **This project this project has been discontinued**.
 
 This is the repository for my personal portfolio, a project developed using React.js. This portfolio was created to showcase my work, skills, and experience as a web developer.
 
